@@ -77,3 +77,23 @@ footer {
         padding: 6px 12px;
     }
 }
+
+/* Box de form */
+
+
+.form-box {
+    background-color: var(--color-ligth);
+    padding: 48px 40px;
+    border-radius: 16px;
+    width: 550px;
+}
+
+/* Box de login e cadastro */
+
+.auth-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}

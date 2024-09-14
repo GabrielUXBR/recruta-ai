@@ -6,19 +6,23 @@
     <title>Login - Candidato</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="login-styles.css">
+    <link rel="stylesheet" href="../login-styles.css">
     <link rel="stylesheet" href="/client/public/styles.css">
     <link rel="stylesheet" href="/client/src/components/base.css">
-    <link rel="stylesheet" href="./src/components/buttons.css">
+    <link rel="stylesheet" href="../src/components/buttons.css">
 </head>
 
-<body style="background-color: #e9e9e9;">
-    <section class="login-box">
-        <div class="brand">
-            <h1 class="display-5">Recruta.ai</h1>
-            <img src="/client/src/assets/star.png" alt="Logo">
+<body class="auth-style" style="background-color: #e9e9e9;">
+    <section class="form-box">
+        <div>
+            <h1 class="display-5">Criar conta</h1>
         </div>
+        <!-- @Antonio Criar processo de cadastro de conta do candidato -->
         <form>
+            <div class="mb-3">
+                <label class="form-label" for="emai">Nome</label>
+                <input class="form-control"  type="email" id="email" name="email" required placeholder="Digite o seu nome">
+            </div>
             <div class="mb-3">
                 <label class="form-label" for="emai">Email</label>
                 <input class="form-control"  type="email" id="email" name="email" required placeholder="Digite o e-mail cadastrado aqui">
@@ -27,35 +31,14 @@
                 <label class="form-label"  for="password">Senha</label>
                 <input class="form-control" type="password" id="password" name="password" required placeholder="Digite a sua melhor senha">
             </div>
-            <!-- @Antonio Tranformar em botões -->
-            <a class="btn btn-primary mb-3" href="/client/src/candidato/inicio/inicio.html" >Entrar</a>
-            <a class="btn btn-secondary mb-3" href="#">Criar conta</a>
-            <hr>
-            <div>
-            <a class="btn mb-3" href="#">Esqueceu a senha?</a>
+            <div class="mb-3">
+                <label class="form-label"  for="password">Confirme a sua senha</label>
+                <input class="form-control" type="password" id="password" name="password" required placeholder="Confirme a senha digitada anteriormente">
             </div>
-            <!-- @Antonio Tranformar em botões -->
+            <a class="btn btn-primary mb-3" href="/client/src/candidato/inicio/inicio.html">Criar conta</a>
+            <a class="btn btn-secondary mb-3" href="/client/src/candidato/login/login.html">Voltar</a>
         </form>
     </section>
-    <!-- <div class="container">
-        <div class="login-box">
-            <div class="brand">Recruta.ai<img src="/client/src/assets/star.png" alt="star" class="star"></div>
-            <form id="loginForm">
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="Digite o e-mail cadastrado aqui">
-                </div>
-                <div class="input-group">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" name="password" required placeholder="Digite a sua melhor senha">
-                </div>
-                <div class="">                
-                    <button class="btn btn-primary" type="submit">Entrar</button>
-                    <button class="btn btn-secondary"> <a href="cadastro.html">Criar conta</a></button>
-                </div>
-            </form>
-        </div>
-    </div> -->
 </body>
 <script src="login.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
