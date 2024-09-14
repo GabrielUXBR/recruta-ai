@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Nova Vaga</title>
+    <link rel="stylesheet" href="css/create_job.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="/home-empresa/dashboard.html">Dashboard</a></li>
+                    <li><a href="company_profile.html">Minha Empresa</a></li>
+                    <li><a href="logout.html">Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <header>
+                <h1>Nova Vaga</h1>
+            </header>
+            <section class="form-section">
+                <form id="createJobForm">
+                    <div class="form-group">
+                        <label for="jobName">Nome da Vaga:</label>
+                        <input type="text" id="jobName" name="jobName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contractType">Modalidade de Contrato:</label>
+                        <select id="contractType" name="contractType" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="remoto">Remoto</option>
+                            <option value="presencial">Presencial</option>
+                            <option value="hibrido">Híbrido</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="jobDescription">Descrição da Vaga:</label>
+                        <textarea id="jobDescription" name="jobDescription" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedbackEnable">Habilita Feedback Automático:</label>
+                        <select id="feedbackEnable" name="feedbackEnable" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+                    <div class="form-group feedback-group">
+                        <label for="feedbackMessage">Descrição do Feedback Automático:</label>
+                        <textarea id="feedbackMessage" name="feedbackMessage" rows="4" disabled></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" id="cancelButton">Cancelar</button>
+                        <button type="submit" id="createJobButton">Criar Nova Vaga</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Link da Publicação da Vaga</h2>
+            <p id="modalLink">Aqui será exibido o link da vaga após a criação.</p>
+            <button id="copyLinkButton">Copiar Link</button>
+        </div>
+    </div>
+    <script src="js/create_job.js"></script>
+</body>
+</html>

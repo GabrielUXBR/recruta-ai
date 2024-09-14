@@ -1,0 +1,79 @@
+:root {
+    --body-font: "Poppins", sans-serif;
+    --color-ligth: #fff;
+    --color-black: #040B20;
+    --color-roxorecruta: #5630BF;
+    --color-azulrecruta: #4300FF;
+    --color-azulclaro: #0094FF;
+    --color-placeholder: #888;
+
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.5;
+    background-color: var(--body-color);
+    min-height: 100vh;
+}
+
+footer {
+    background-color: var(--footer-color);
+}
+
+.brand {
+    display: flex;
+    font-size: 2rem;
+    font-weight: semibold;
+    gap: 8px;
+    align-items: center;
+}
+
+.brand img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Botões */
+
+.btn-primary {
+    background-color: var(--color-azulrecruta);
+    border: none;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-roxorecruta);
+}
+
+/* Estilo padrão para o botão */
+.custom-btn {
+    font-size: 20px; /* Tamanho do texto */
+    padding: 10px 20px; /* Preenchimento do botão */
+}
+
+.btn-secondary {
+    background-color: var(--color-white);
+    border: var(--color-azulrecruta) 1px solid;
+    color: var(--color-azulrecruta);
+    width: 100%;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-roxorecruta);
+}
+
+/* Ajustar o tamanho do botão para telas menores */
+@media (max-width: 768px) {
+    .custom-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+/* Ajustar o tamanho do botão para telas ainda menores */
+@media (max-width: 576px) {
+    .custom-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}

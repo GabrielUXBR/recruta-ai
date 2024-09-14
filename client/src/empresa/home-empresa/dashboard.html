@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard da Empresa</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="company_profile.html">Minha Empresa</a></li>
+                    <li><a href="logout.html">Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <header>
+                <h1>Dashboard da Empresa</h1>
+                <button id="createJobButton">Anunciar Vaga</button>
+            </header>
+            <section class="filters">
+                <div class="filter-group">
+                    <label for="statusFilter">Filtro por Status:</label>
+                    <select id="statusFilter">
+                        <option value="">Todos</option>
+                        <option value="em_andamento">Em Andamento</option>
+                        <option value="finalizado">Finalizado</option>
+                        <option value="cancelado">Cancelado</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="searchFilter">Buscar por Nome da Vaga:</label>
+                    <input type="text" id="searchFilter" placeholder="Digite o nome da vaga">
+                </div>
+            </section>
+            <section class="job-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID da Publicação</th>
+                            <th>Nome da Publicação</th>
+                            <th>Total de Candidatos</th>
+                            <th>Status</th>
+                            <th>Data da Publicação</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="jobTableBody">
+                        <!-- Dynamic job rows will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

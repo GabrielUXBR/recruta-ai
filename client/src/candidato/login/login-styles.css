@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-box {
+    background-color: var(--color-ligth);
+    padding: 48px 40px;
+    border-radius: 16px;
+    width: 550px;
+}
