@@ -20,6 +20,15 @@ footer {
     background-color: var(--footer-color);
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.module-title {
+    font-weight: 400;
+}
+
 .brand {
     display: flex;
     font-size: 2rem;

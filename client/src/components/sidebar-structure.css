@@ -1,0 +1,63 @@
+
+
+/* Menu do sidebar */
+
+.sidebar {
+    width: 350px;
+    background-color: var(--color-white);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    display: flex;
+    margin-bottom: 8px;
+    padding: 16px;
+    border-radius: 99px;
+}
+
+.nav-item:active {
+    background-color: var(--color-roxorecruta);
+}
+.nav-item-active {
+    display: flex;
+    margin-bottom: 16px;
+    background-color: var(--color-roxorecruta);
+    padding: 16px;
+    border-radius: 99px;
+    color: var(--color-white);
+    gap: 8x;
+}
+
+.nav-item-active a {
+    color: #fff;
+}
+
+.nav-link {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+/* Conteúdo da página */
+
+.main-content {
+    flex-grow: 2;
+    background-color: #eaeef1; /* Cor de fundo da área principal */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Garante que a altura seja total */
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.module-title {
+    font-size: 32px;
+}

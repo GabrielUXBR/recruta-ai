@@ -1,0 +1,25 @@
+Documentando todas as alterações solicitadas aqui
+
+Login do candidato
+	Codar processo de autenticação e login do candidato
+	E transformar os links em botões quando esse processo for ajustado
+	https://vscode.dev/github/GabrielUXBR/recruta-ai/blob/main/client/src/candidato/login/login.html#L30-L31
+	client/src/candidato/login/login.html linha 31
+
+
+Cadastro do candidato 
+	Codar processo de cadastro desse usuário
+	E tranformar o botão “Criar conta” nessa requisição de criação, depois joga ele no login pra ele entrar
+	https://vscode.dev/github/GabrielUXBR/recruta-ai/blob/main/client/src/candidato/cadastro/cadastro.html#L20-L21
+	client/src/candidato/cadastro/cadastro.html linha 20
+
+Login empresa
+    Codar processo de autenticação e login da empresa
+    Atualmente só está redirecionando para o dash
+    https://vscode.dev/github/GabrielUXBR/recruta-ai/blob/main/client/src/empresa/login/login.html#L31
+    client/src/empresa/cadastro-empresa/cadastro-empresa.html linha 31
+
+Cadastro da empresa
+    Codar processo de cadastro da empresa, não teremos plano por enquanto
+    https://vscode.dev/github/GabrielUXBR/recruta-ai/blob/main/client/src/empresa/cadastro-empresa/cadastro-empresa.html#L20
+    client/src/empresa/cadastro-empresa/cadastro-empresa.html linha 20
