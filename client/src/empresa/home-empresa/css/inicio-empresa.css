@@ -17,3 +17,8 @@
 .banner-empresa button {
     width: 200px;
 }
+
+.page-filters {
+    display: flex;
+    justify-content: space-between;
+}

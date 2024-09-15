@@ -9,10 +9,13 @@
     border: none;
 }
 
-.btn-primary::after {
+.btn-primary:after {
     background-color: var(--color-ligth-orange);
     border: none;
 }
+
+
+
 /* Estilo padrão para o botão */
 .custom-btn {
     font-size: 20px; /* Tamanho do texto */

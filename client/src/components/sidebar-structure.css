@@ -3,7 +3,7 @@
 /* Menu do sidebar */
 
 .sidebar {
-    width: 350px;
+    width: 300px;
     background-color: var(--color-white);
     padding: 32px 24px;
     display: flex;
@@ -19,7 +19,7 @@
 .nav-item {
     display: flex;
     margin-bottom: 8px;
-    padding: 16px;
+    padding: 8px 16px;
     border-radius: 99px;
 }
 
@@ -30,7 +30,7 @@
     display: flex;
     margin-bottom: 16px;
     background-color: var(--color-roxorecruta);
-    padding: 16px;
+    padding: 8px 16px;
     border-radius: 99px;
     color: var(--color-white);
     gap: 8x;
@@ -58,6 +58,21 @@
     justify-content: flex-start;
 }
 
+
 .module-title {
     font-size: 32px;
+}
+
+.page-title {
+    font-size: 24px;
+}
+
+.content-admin {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 24px;
+    gap: 16px;
 }

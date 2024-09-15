@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${job.status}</td>
                 <td>${job.date}</td>
                 <td class="actions">
-                    <button onclick="copyLink(${job.id})">Copiar Link</button>
-                    <button onclick="editJob(${job.id})">Editar</button>
-                    <button onclick="deleteJob(${job.id})">Excluir</button>
+                    <button class="table-button" onclick="copyLink(${job.id})"><img src="/client/src/assets/search-2-line.svg" title="Ver detalhes"></button>
+                    <button class="table-button" onclick="editJob(${job.id})"><img src="/client/src/assets/pencil-line.svg" title="Editar"></button>
+                    <button class="table-button" onclick="deleteJob(${job.id})"><img src="/client/src/assets/delete-bin-6-line.svg" title="Excluir"></button>
                 </td>
             `;
             jobTableBody.appendChild(row);
@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     createJobButton.addEventListener('click', () => {
-        window.location.href = 'create_job.html'; // Replace with the URL of your job creation form
+        window.location.href = '../criacao-vaga-empresa/create-job.html'; // Caminho relativo correto
     });
-
+    
     statusFilter.addEventListener('change', filterJobs);
     searchFilter.addEventListener('input', filterJobs);
 

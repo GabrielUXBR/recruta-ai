@@ -22,4 +22,8 @@ Login empresa
 Cadastro da empresa
     Codar processo de cadastro da empresa, não teremos plano por enquanto
     https://vscode.dev/github/GabrielUXBR/recruta-ai/blob/main/client/src/empresa/cadastro-empresa/cadastro-empresa.html#L20
-    client/src/empresa/cadastro-empresa/cadastro-empresa.html linha 20
+    client/src/empresa/cadastro-empresa/cadastro-empresa.html linha 20]
+
+
+Cadastro da vaga 
+	O botão não estava funcionando, então tirei o código dele e deixei so
