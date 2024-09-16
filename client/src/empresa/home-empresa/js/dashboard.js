@@ -22,7 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${job.status}</td>
                 <td>${job.date}</td>
                 <td class="actions">
-                    <button class="table-button" onclick="copyLink(${job.id})"><img src="/client/src/assets/search-2-line.svg" title="Ver detalhes"></button>
+                <button class="table-button" onclick="window.location.href='./detalhes-vaga.html?id=${job.id}'">
+                <img src="/client/src/assets/search-2-line.svg" title="Ver detalhes">
+                </button>
                     <button class="table-button" onclick="editJob(${job.id})"><img src="/client/src/assets/pencil-line.svg" title="Editar"></button>
                     <button class="table-button" onclick="deleteJob(${job.id})"><img src="/client/src/assets/delete-bin-6-line.svg" title="Excluir"></button>
                 </td>
