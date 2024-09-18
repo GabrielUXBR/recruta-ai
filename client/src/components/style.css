@@ -8,4 +8,35 @@
     border: none;
 }
 
+.header-roxo {
+    background-color: var(--color-roxorecruta);
+}
+
+.header-roxo a{
+    color: #fff;
+}
+
+.header-roxo img {
+    color: #fff;
+}
+
+.vaga-roxo{
+    color: var(--color-roxorecruta);
+}
+
+.vaga-preto{
+    color: #000000
+}
+
+.vaga {
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+.h4 {
+    font-weight: bold; 
+    font-size: 20px;
+    color: #000000
+}
+
 

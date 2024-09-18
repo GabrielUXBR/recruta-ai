@@ -1,7 +1,12 @@
 .btn-primary {
+    display: flex;
     background-color: var(--color-azulrecruta);
     border: none;
-    width: 100%;
+    width: 160px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
 }
 
 .btn-primary:hover {
@@ -12,6 +17,12 @@
 .btn-primary:after {
     background-color: var(--color-ligth-orange);
     border: none;
+}
+
+.large {
+    padding: 32px 64px;
+    width: fit-content;
+    font-size: 1.2rem;
 }
 
 
@@ -37,3 +48,4 @@
         padding: 6px 12px;
     }
 }
+
